@@ -10,12 +10,12 @@ export const DATA = [
       },
       {
         name: "DEVILS ON HORSEBACK",
-        image:require("../assets/new.webp"),
+        image: require("../assets/new.webp"),
         price: "$12",
         description:
           "bacon wrapped dates stuffed with feta, balsamic reduction",
         para: "~ extra bacon $3",
       },
     ],
-  }
-]
+  },
+];
