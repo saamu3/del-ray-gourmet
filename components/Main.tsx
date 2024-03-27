@@ -10,99 +10,73 @@ import {
   StyleSheet,
   Text,
   View,
-  SectionList,
-  ScrollView,
+  ImageBackground,
 } from "react-native";
-import Select from "./Select";
-import Navbar from "./Navbar";
-import { DATA } from "../StaticData.js/AppetizersData";
-import { useState } from "react";
 type TState = {
   visible: boolean;
   setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const data = [
-  { key: "1", value: "Dinner Menu" },
-  { key: "2", value: "Happy Hour Menu" },
-  { key: "3", value: "Lunch Specials" },
-];
-
+const img1={
+  uri:"https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669"
+}
+const image = {
+  uri: "https://media-cdn.tripadvisor.com/media/photo-s/27/ac/8b/8e/pretelt-gourmet-meats.jpg",
+};
 export default function Main() {
-  const [visible, setIsVisible] = useState<boolean>(false);
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <StatusBar hidden />
-        <View style={styles.innerContainer}>
-          <Text style={styles.text}>
-            <FontAwesomeIcon
-              style={{ color: "white" }}
-              icon={faCircleExclamation}
-            />
-            WE ARE NOW OPEN FOR INDOOR DINING!
-          </Text>
-        </View>
-        <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <Image
-            source={{
-              uri: "https://media-cdn.tripadvisor.com/media/photo-s/27/ac/8b/8e/pretelt-gourmet-meats.jpg",
-            }}
-            style={{
-              width: 400,
-              height: 200,
-            }}
+    <View style={styles.container}>
+      <StatusBar hidden />
+      <View style={styles.innerContainer}>
+        <Text style={styles.text}>
+          <FontAwesomeIcon
+            style={{ color: "white" }}
+            icon={faCircleExclamation}
           />
-          <View style={styles.address}>
-            <Text style={{ color: "white" }}>Del Ray Gourmet</Text>
-            <Text style={{ color: "white" }}>
-              Open • Closes 10:00 PM
-              <FontAwesomeIcon style={{ color: "white" }} icon={faAngleDown} />
-            </Text>
-            <Text style={{ color: "white" }}>
-              123 Ave of the Roosters, Derwood MD
-            </Text>
-            <Text style={{ color: "white" }}>
-              <FontAwesomeIcon style={{ color: "white" }} icon={faPhone} />
-              Tel: 301-555-1212
-            </Text>
-          </View>
-          <Navbar visible={visible} setIsVisible={setIsVisible} />
-          <SectionList
-            sections={DATA}
-            keyExtractor={(item: any, index: any) => item + index}
-            renderItem={({ item }: any) => (
-              <View style={styles.item}>
-                <View>
-                  <Text style={styles.title}>{item.name}</Text>
-                  <Text style={styles.title}>{item.description}</Text>
-                  <Text style={styles.title}>{item.para}</Text>
-                </View>
-                <View>
-                  <Text>{item.price}</Text>
-                </View>
-              </View>
-            )}
-            renderSectionHeader={({ section: { title } }) => (
-              <Text style={styles.header}>{title}</Text>
-            )}
-          />
-        </View>
+          WE ARE NOW OPEN FOR INDOOR DINING!
+        </Text>
       </View>
-    </ScrollView>
+      <View style={{ justifyContent: "center", alignItems: "center"}}>
+        <ImageBackground
+          source={image}
+          style={{
+            width: 400,
+            height: 200,
+          }}
+        > 
+        <View style={{display:"flex",flexDirection:"row",justifyContent:"space-around"}}>
+         <Image source={img1} style={{height:100, width:150,marginTop:70}}/>
+         <View style={styles.address}>
+          <Text style={{ color: "white" }}>Del Ray Gourmet</Text>
+          <Text style={{ color: "white" }}>
+            Open • Closes 10:00 PM
+            <FontAwesomeIcon style={{ color: "white" }} icon={faAngleDown} />
+          </Text>
+          <Text style={{ color: "white" }}>
+            123 Ave of the Roosters, Derwood MD
+          </Text>
+          <Text style={{ color: "white" }}>
+            <FontAwesomeIcon style={{ color: "white" }} icon={faPhone} />
+            Tel: 301-555-1212
+          </Text>
+          </View>
+          </View>
+        </ImageBackground>
+      </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1},
+  container: { flex: 1,backgroundColor:"skyblue"},
   innerContainer: {
     height: 30,
     width: 360,
-    backgroundColor: "pink",
+    backgroundColor:"pink",
     paddingLeft: 40,
     paddingTop: 5,
   },
   text: { color: "white" },
-  address: { position: "absolute", color: "white" },
+  address: {marginTop:20,marginRight:30},
   item: {
     display: "flex",
     flexDirection: "row",
