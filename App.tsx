@@ -11,13 +11,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Main />
-      <Tab.Navigator style={{}}
-        // screenOptions={{
-        //   tabBarLabelStyle: { fontSize: 12,fontWeight:"bold"},
-        //   tabBarItemStyle: { width: 100 },
-        //   tabBarStyle: { backgroundColor: "#fff" },
-        // }}
-      >
+      <Tab.Navigator>
         <Tab.Screen name="Appetizers" component={Section} />
         <Tab.Screen name="DESSERTS" component={Desserts} />
         <Tab.Screen name="Main Entrees" component={MainEntrees} />
