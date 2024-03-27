@@ -3,6 +3,8 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import { NavigationContainer } from "@react-navigation/native";
 import Main from "./components/Main";
 import Section from "./components/Section";
+import Desserts from "./components/Desserts";
+import MainEntrees from "./components/MainEntrees";
 
 const Tab = createMaterialTopTabNavigator();
 export default function App() {
@@ -17,8 +19,8 @@ export default function App() {
         // }}
       >
         <Tab.Screen name="Appetizers" component={Section} />
-        <Tab.Screen name="DESSERTS" component={Section} />
-        <Tab.Screen name="Main Entrees" component={Section} />
+        <Tab.Screen name="DESSERTS" component={Desserts} />
+        <Tab.Screen name="Main Entrees" component={MainEntrees} />
       </Tab.Navigator>
     </NavigationContainer>
   );
