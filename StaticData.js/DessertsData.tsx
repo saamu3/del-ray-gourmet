@@ -1,4 +1,4 @@
-export const Desserts = [
+export const DessertsData = [
   {
     title: "DESSERTS",
     data: [
