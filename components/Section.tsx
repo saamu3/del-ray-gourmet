@@ -1,4 +1,4 @@
-import { View,Text } from "react-native";
+import { View,Text,Image } from "react-native";
 import { DATA } from "../StaticData.js/AppetizersData";
 import { SectionList,StyleSheet} from "react-native";
 
@@ -10,13 +10,14 @@ export default function Section(){
             keyExtractor={(item: any, index: any) => item + index}
             renderItem={({ item }: any) => (
               <View style={styles.item}>
+              {item.image && <Image source={item.image} style={{height:10,width:20,marginTop:10}} />}
                 <View>
-                  <Text style={styles.title}>{item.name}</Text>
-                  <Text style={styles.title}>{item.description}</Text>
-                  <Text style={styles.title}>{item.para}</Text>
+                  <Text style={{fontSize:18,color:"maroon"}}>{item.name}</Text>
+                  <Text style={{fontSize:12,color:"firebrick",fontStyle:"italic"}}>{item.description}</Text>
+                  <Text style={{fontSize:10,color:"tomato"}}>{item.para}</Text>
                 </View>
                 <View>
-                  <Text>{item.price}</Text>
+                  <Text style={{fontSize:15,color:"firebrick"}}>{item.price}</Text>
                 </View>
               </View>
             )}
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
     innerContainer: {
       height: 30,
       width: 360,
-      backgroundColor: "pink",
+    //  backgroundColor: "pink",
       paddingLeft: 40,
       paddingTop: 5,
     },
@@ -43,9 +44,9 @@ const styles = StyleSheet.create({
       display: "flex",
       flexDirection: "row",
       justifyContent: "space-between",
-      height: 100,
+      height: 130,
       width: 340,
-      backgroundColor: "#f9c2ff",
+    //   backgroundColor: "#f9c2ff",
       padding: 20,
       marginVertical: 8,
     },
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
       textAlign: "center",
       fontStyle: "italic",
       fontSize: 20,
-      color: "	#AA336A",
+      color: "maroon",
       fontWeight: "bold",
     },
   });
