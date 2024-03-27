@@ -2,10 +2,10 @@ import { View, Text, StyleSheet,Pressable } from "react-native";
 type TState = {
   visible:boolean,setIsVisible:React.Dispatch<React.SetStateAction<boolean>>
 }
-export default function Navbar({visible,setIsVisible}:TState) {
+export default function Navbar() {
   return (
     <View style={styles.viewContainer}>
-      <Text style={styles.textContainer} onPress={()=>{ setIsVisible(!visible);console.log("hello")}}>Appetizers</Text>
+      <Text style={styles.textContainer}>Appetizers</Text>
       <Text style={styles.textContainer}>Main Entrees</Text>
       <Text style={styles.textContainer}>Desserts</Text>
     </View>
