@@ -12,12 +12,12 @@ export default function MainEntrees() {
         renderItem={({ item }: any) => (
           <View style={styles.item}>
             <View>
-              <Text style={styles.title}>{item.name}</Text>
-              <Text style={styles.title}>{item.description}</Text>
-              <Text style={styles.title}>{item.para}</Text>
+              <Text style={{fontSize:18,color:"maroon"}}>{item.name}</Text>
+              <Text style={{fontSize:12,color:"firebrick",fontStyle:"italic"}}>{item.description}</Text>
+              <Text style={{fontSize:10,color:"tomato"}}>{item.para}</Text>
             </View>
             <View>
-              <Text>{item.price}</Text>
+              <Text style={{fontSize:15,color:"firebrick"}}>{item.price}</Text>
             </View>
           </View>
         )}
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     height: 100,
     width: 340,
-    backgroundColor: "#f9c2ff",
+    // backgroundColor: "#f9c2ff",
     padding: 20,
     marginVertical: 8,
   },
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontStyle: "italic",
     fontSize: 20,
-    color: "	#AA336A",
+    color: "maroon",
     fontWeight: "bold",
   },
 });
