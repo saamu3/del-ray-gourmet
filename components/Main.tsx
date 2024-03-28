@@ -18,13 +18,11 @@ type TState = {
 };
 const img1 = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
-};
-const image = {
-  uri: "https://cdn-az.allevents.in/events5/banners/7d2aa1f19c32b002feb93c0a2a8502388c910aea17b6e438ec41f221d2be3e5c-rimg-w1200-h675-gmir.jpg?v=1709791272",
-};
+}
+
 export default function Main() {
   return (
-    <View style={styles.container}>
+    <View >
       <StatusBar hidden />
       <View style={styles.innerContainer}>
         <Text style={styles.text}>
@@ -37,22 +35,22 @@ export default function Main() {
       </View>
       <View style={{ justifyContent: "center", alignItems: "center" }}>
         <ImageBackground
-          source={image}
+          source={require("../assets/background.webp")}
           style={{
             width: 400,
-            height: 400,
+            height: 200
           }}
         >
           <View
             style={{
               display: "flex",
               flexDirection: "row",
-              justifyContent: "space-around",
+              justifyContent: "space-between",
             }}
           >
             <Image
               source={img1}
-              style={{ height: 100, width: 180, marginTop: 70 }}
+              style={{ height: 60, width: 120, marginTop: 90,marginLeft:30 }}
             />
             <View style={styles.address}>
               <Text
@@ -61,7 +59,7 @@ export default function Main() {
                 Del Ray Gourmet
               </Text>
               <Text
-                style={{ color: "white", fontSize: 20, fontWeight: "bold" }}
+                style={{ color: "white", fontSize: 17, fontWeight: "bold" }}
               >
                 Open • Closes 10:00 PM
                 <FontAwesomeIcon
@@ -70,7 +68,7 @@ export default function Main() {
                 />
               </Text>
               <Text
-                style={{ color: "white", fontSize: 15, fontWeight: "bold" }}
+                style={{ color: "white", fontSize: 12, fontWeight: "bold" }}
               >
                 123 Ave of the Roosters, Derwood MD
               </Text>
@@ -89,16 +87,16 @@ export default function Main() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "skyblue" },
+  // container: {backgroundColor: "skyblue" },
   innerContainer: {
     height: 50,
     width: 360,
-    backgroundColor: "darkred",
+    backgroundColor: "rgb(248 113 113)",
     paddingLeft: 40,
-    paddingTop: 7,
+    paddingTop: 14,
   },
   text: { color: "white" },
-  address: { marginTop: 10, marginRight: 40, gap: 5 },
+  address: { marginTop: 50, marginRight: 30,flexShrink:1 },
   item: {
     display: "flex",
     flexDirection: "row",
