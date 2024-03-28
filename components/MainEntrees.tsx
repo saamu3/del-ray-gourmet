@@ -34,7 +34,7 @@ export default function MainEntrees() {
                   )}
                 </View>
                 <View style={{ flexShrink: 1 }}>
-                  <Text style={{ fontSize: 18, color: "maroon" }}>
+                  <Text style={{ fontSize: 18, color:"rgb(133 77 14)",fontFamily:"serif" }}>
                     {item.name}
                   </Text>
                   {item.description && (
@@ -43,6 +43,7 @@ export default function MainEntrees() {
                         fontSize: 12,
                         color: "firebrick",
                         fontStyle: "italic",
+                        fontFamily:"serif",
                         flexShrink: 1,
                       }}
                     >
@@ -50,7 +51,7 @@ export default function MainEntrees() {
                     </Text>
                   )}
 
-                  <Text style={{ fontSize: 10, color: "tomato" }}>
+                  <Text style={{ fontSize: 10, color: "rgb(107 114 128)" }}>
                     {item.para}
                   </Text>
                 </View>
@@ -58,7 +59,7 @@ export default function MainEntrees() {
             </View>
 
             <View>
-              <Text style={{ fontSize: 15, color: "firebrick" }}>
+              <Text style={{ fontSize: 15, color:"rgb(133 77 14)" }}>
                 {item.price}
               </Text>
             </View>
@@ -89,7 +90,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     height: 100,
     width: 340,
-    // backgroundColor: "#f9c2ff",
+    //  backgroundColor: "#f9c2ff",
     padding: 20,
     marginVertical: 8,
   },
@@ -99,9 +100,10 @@ const styles = StyleSheet.create({
   },
   header: {
     textAlign: "center",
-    fontStyle: "italic",
+    // fontStyle: "italic",
+    fontFamily:"serif",
     fontSize: 20,
-    color: "maroon",
+    color: "rgb(248, 113, 113)",
     fontWeight: "bold",
   },
 });
