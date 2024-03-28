@@ -4,7 +4,7 @@ export const Entrees = [
     data: [
       {
         name: "GRILLED FAROE ISLAND SALMON",
-        image: require("../assets/salmon.webp"),
+        image: require("../assets/salmon1.jpg"),
         price: "$26",
         description: "quinoa, oyster mushrooms, brussels sprout leaves",
         // para: "Dietary Information",

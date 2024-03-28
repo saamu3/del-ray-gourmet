@@ -17,7 +17,7 @@ export const DessertsData = [
       },
       {
         name: "HOUSE MADE ICE CREAM",
-        image: require("../assets/icecream.jpeg"),
+        image: require("../assets/icecream.jpg"),
         price: "$9",
         description: "Blood orange sherbet",
         // para: "Dietary Information",
