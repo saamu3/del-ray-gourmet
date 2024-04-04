@@ -1,7 +1,5 @@
 import { View, Text, SectionList, StyleSheet, Image } from "react-native";
 import { Entrees } from "../StaticData.js/MainEntreesData";
-import { useState } from "react";
-import { SelectList } from "react-native-dropdown-select-list";
 export default function MainEntrees() {
   return (
     <View style={{ marginTop: 40 }}>
@@ -12,7 +10,7 @@ export default function MainEntrees() {
           <View style={styles.item}>
             <View
               style={{
-                height: 100,
+                // height: 100,
                 width: 300,
                 // borderColor: "grey",
                 // borderWidth: 2,
@@ -27,7 +25,7 @@ export default function MainEntrees() {
                         height: 90,
                         width: 140,
                         marginTop: 6,
-                        marginRight: 5,
+                        marginRight: 15,
                         borderRadius: 5,
                       }}
                     />
@@ -88,11 +86,12 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    height: 100,
-    width: 340,
-    //  backgroundColor: "#f9c2ff",
+    // alignItems:"center",
+    //  height: 100,
+    // width: 340,
+    // backgroundColor: "#f9c2ff",
     padding: 20,
-    marginVertical: 8,
+    // marginVertical: 4,
   },
   title: {
     fontSize: 10,

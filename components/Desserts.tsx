@@ -1,9 +1,5 @@
 import { View, Text, StyleSheet, SectionList, Image } from "react-native";
 import { DessertsData } from "../StaticData.js/DessertsData";
-type TState = {
-  visible: boolean;
-  setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
-};
 export default function Desserts() {
   return (
     <View style={{ marginTop: 40 }}>
