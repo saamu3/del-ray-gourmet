@@ -12,10 +12,6 @@ import {
   View,
   ImageBackground,
 } from "react-native";
-type TState = {
-  visible: boolean;
-  setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
-};
 const img1 = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
 }
@@ -38,7 +34,8 @@ export default function Main() {
           source={require("../assets/background.webp")}
           style={{
             width: 400,
-            height: 200
+            height: 200,
+            opacity:0.9
           }}
         >
           <View
