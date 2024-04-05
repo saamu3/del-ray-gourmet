@@ -12,6 +12,7 @@ export default function Section() {
           <View style={styles.item}>
             {item.image && (
               <Image
+                testID="image1"
                 source={item.image}
                 style={{ height: 10, width: 20, marginTop: 10 }}
               />

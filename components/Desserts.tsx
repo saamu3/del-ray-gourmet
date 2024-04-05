@@ -20,6 +20,7 @@ export default function Desserts() {
                 <View>
                   {item.image && (
                     <Image
+                      testID="image4"
                       source={item.image}
                       style={{
                         height: 90,

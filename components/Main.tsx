@@ -31,6 +31,7 @@ export default function Main() {
       </View>
       <View style={{ justifyContent: "center", alignItems: "center" }}>
         <ImageBackground
+          testID="background"
           source={require("../assets/background.webp")}
           style={{
             width: 400,

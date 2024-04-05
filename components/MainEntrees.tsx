@@ -2,7 +2,7 @@ import { View, Text, SectionList, StyleSheet, Image } from "react-native";
 import { Entrees } from "../StaticData.js/MainEntreesData";
 export default function MainEntrees() {
   return (
-    <View style={{ marginTop: 40 }}>
+    <View  style={{ marginTop: 40 }}>
       <SectionList
         sections={Entrees}
         keyExtractor={(item: any, index: any) => item + index}
@@ -20,6 +20,7 @@ export default function MainEntrees() {
                 <View>
                   {item.image && (
                     <Image
+                      testID="image3"
                       source={item.image}
                       style={{
                         height: 90,
