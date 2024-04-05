@@ -14,11 +14,11 @@ import {
 } from "react-native";
 const img1 = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
-}
+};
 
 export default function Main() {
   return (
-    <View >
+    <View>
       <StatusBar hidden />
       <View style={styles.innerContainer}>
         <Text style={styles.text}>
@@ -36,7 +36,7 @@ export default function Main() {
           style={{
             width: 400,
             height: 200,
-            opacity:0.9
+            opacity: 0.9,
           }}
         >
           <View
@@ -48,7 +48,7 @@ export default function Main() {
           >
             <Image
               source={img1}
-              style={{ height: 60, width: 120, marginTop: 90,marginLeft:30 }}
+              style={{ height: 60, width: 120, marginTop: 90, marginLeft: 30 }}
             />
             <View style={styles.address}>
               <Text
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     paddingTop: 14,
   },
   text: { color: "white" },
-  address: { marginTop: 50, marginRight: 30,flexShrink:1 },
+  address: { marginTop: 50, marginRight: 30, flexShrink: 1 },
   item: {
     display: "flex",
     flexDirection: "row",

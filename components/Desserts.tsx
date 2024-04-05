@@ -33,7 +33,13 @@ export default function Desserts() {
                   )}
                 </View>
                 <View style={{ flexShrink: 1 }}>
-                  <Text style={{ fontSize: 18, color:"rgb(133 77 14)",fontFamily:"serif" }}>
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      color: "rgb(133 77 14)",
+                      fontFamily: "serif",
+                    }}
+                  >
                     {item.name}
                   </Text>
                   <Text
@@ -41,7 +47,7 @@ export default function Desserts() {
                       fontSize: 12,
                       color: "firebrick",
                       fontStyle: "italic",
-                      fontFamily:"serif",
+                      fontFamily: "serif",
                       flexShrink: 1,
                     }}
                   >
@@ -56,7 +62,7 @@ export default function Desserts() {
             </View>
 
             <View>
-              <Text style={{ fontSize: 15, color:"rgb(133 77 14)" }}>
+              <Text style={{ fontSize: 15, color: "rgb(133 77 14)" }}>
                 {item.price}
               </Text>
             </View>
@@ -98,7 +104,7 @@ const styles = StyleSheet.create({
   header: {
     textAlign: "center",
     // fontStyle: "italic",
-    fontFamily:"serif",
+    fontFamily: "serif",
     fontSize: 20,
     color: "rgb(248, 113, 113)",
     fontWeight: "bold",

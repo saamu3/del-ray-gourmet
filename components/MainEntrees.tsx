@@ -2,7 +2,7 @@ import { View, Text, SectionList, StyleSheet, Image } from "react-native";
 import { Entrees } from "../StaticData.js/MainEntreesData";
 export default function MainEntrees() {
   return (
-    <View  style={{ marginTop: 40 }}>
+    <View style={{ marginTop: 40 }}>
       <SectionList
         sections={Entrees}
         keyExtractor={(item: any, index: any) => item + index}
@@ -33,7 +33,13 @@ export default function MainEntrees() {
                   )}
                 </View>
                 <View style={{ flexShrink: 1 }}>
-                  <Text style={{ fontSize: 18, color:"rgb(133 77 14)",fontFamily:"serif" }}>
+                  <Text
+                    style={{
+                      fontSize: 18,
+                      color: "rgb(133 77 14)",
+                      fontFamily: "serif",
+                    }}
+                  >
                     {item.name}
                   </Text>
                   {item.description && (
@@ -42,7 +48,7 @@ export default function MainEntrees() {
                         fontSize: 12,
                         color: "firebrick",
                         fontStyle: "italic",
-                        fontFamily:"serif",
+                        fontFamily: "serif",
                         flexShrink: 1,
                       }}
                     >
@@ -58,7 +64,7 @@ export default function MainEntrees() {
             </View>
 
             <View>
-              <Text style={{ fontSize: 15, color:"rgb(133 77 14)" }}>
+              <Text style={{ fontSize: 15, color: "rgb(133 77 14)" }}>
                 {item.price}
               </Text>
             </View>
@@ -101,7 +107,7 @@ const styles = StyleSheet.create({
   header: {
     textAlign: "center",
     // fontStyle: "italic",
-    fontFamily:"serif",
+    fontFamily: "serif",
     fontSize: 20,
     color: "rgb(248, 113, 113)",
     fontWeight: "bold",
