@@ -14,8 +14,9 @@ export default function App() {
       <Tab.Navigator
         screenOptions={{
           tabBarLabelStyle: { fontSize: 12, fontWeight: "500" },
-          // tabBarItemStyle: { width: 100 },
-          // tabBarStyle: { backgroundColor: "powderblue" },
+          tabBarActiveTintColor: "rgb(248, 113, 113)",
+          tabBarInactiveTintColor: "black",
+          tabBarPressColor: "lightpink",
         }}
       >
         <Tab.Screen name="Appetizers" component={Section} />
