@@ -16,7 +16,7 @@ export default function Section() {
                 style={{ height: 10, width: 20, marginTop: 10 }}
               />
             )}
-            <View>
+            <View style={{ flexShrink: 1 }}>
               <Text style={{ fontSize: 18,color:"rgb(133 77 14)",fontFamily:"serif" }}>{item.name}</Text>
               <Text
                 style={{
