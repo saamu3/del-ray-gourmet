@@ -5,17 +5,22 @@ import Main from "./components/Main";
 import Section from "./components/Section";
 import Desserts from "./components/Desserts";
 import MainEntrees from "./components/MainEntrees";
-// import {NavigationContainer} from '@react-navigation/native';
 
 const Tab = createMaterialTopTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
       <Main />
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarLabelStyle: { fontSize: 12, fontWeight: "500" },
+          // tabBarItemStyle: { width: 100 },
+          // tabBarStyle: { backgroundColor: "powderblue" },
+        }}
+      >
         <Tab.Screen name="Appetizers" component={Section} />
-        <Tab.Screen name="DESSERTS" component={Desserts} />
-        <Tab.Screen name="Main Entrees" component={MainEntrees} />
+        <Tab.Screen name="Main Entrées" component={MainEntrees} />
+        <Tab.Screen name="Desserts" component={Desserts} />
       </Tab.Navigator>
     </NavigationContainer>
   );
