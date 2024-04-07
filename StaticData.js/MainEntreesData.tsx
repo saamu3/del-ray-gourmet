@@ -1,4 +1,15 @@
-export const Entrees = [
+type TEntrees = {
+  title: string;
+  data: {
+    name: string;
+    image?: string;
+    price: string;
+    description?: string;
+    para?: string;
+  }[];
+};
+
+export const Entrees: TEntrees[] = [
   {
     title: "MAIN ENTRÉES",
     data: [
@@ -7,27 +18,23 @@ export const Entrees = [
         image: require("../assets/salmon1.jpg"),
         price: "$26",
         description: "quinoa, oyster mushrooms, brussels sprout leaves",
-        // para: "Dietary Information",
       },
       {
         name: "PAN ROASTED DUCK BREAST",
         price: "$29",
         description: "herbed farro, orange-frisée salad, honey gastrique",
-        // para: "Dietary Information",
       },
       {
         name: "CRISPY DUCK IN PORT CHERRY SAUCE",
         price: "$36",
         description:
           "roasted turnips, parsnips, rutabaga and carrots with cornmeal, johnnycake wrapped duck confit, bok choy",
-        // para: "Dietary Information",
       },
       {
         name: "CASSOULET",
         image: require("../assets/Cassoulet.jpg"),
         price: "$19",
         description: "garlic and herb sausage, duck confit, cannellini beans",
-        // para: "Dietary Information",
       },
       {
         name: "TENDERLOIN OF BEEF WELLINGTON",
@@ -40,19 +47,16 @@ export const Entrees = [
         price: "$28",
         description:
           "with Creamy Polenta, Sun-Dried Tomato Jus & Feta Gremolata",
-        // para: "~ Add Bearnaise, Red Wine, or Bordelaise sauce for $2 extra",
       },
       {
         name: "CLASSIC NEW YORK SIRLOIN",
         price: "$26",
-        // description: "with Creamy Polenta, Sun-Dried Tomato Jus & Feta Gremolata",
         para: "~ Add Jumbo Gulf Shrimp with garlic, white wine, lemon for $9",
       },
       {
         name: "IDAHO RED TROUT",
         price: "$25",
         description: "green lentils, chanterelle mushrooms, Waldoboro turnip",
-        // para: "~ Add Jumbo Gulf Shrimp with garlic, white wine, lemon for $9",
       },
     ],
   },

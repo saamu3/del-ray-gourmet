@@ -1,4 +1,15 @@
-export const DATA = [
+export type TAppetizers = {
+  title: string;
+  data: {
+    name: string;
+    image?: string;
+    price: string;
+    description?: string;
+    para?: string;
+  }[];
+};
+
+export const DATA: TAppetizers[] = [
   {
     title: "APPETIZERS",
     data: [

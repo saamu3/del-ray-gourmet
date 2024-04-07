@@ -1,9 +1,21 @@
-export const DessertsData = [
+type TDesserts = {
+  title: string;
+  data: {
+    name: string;
+    image?: string;
+    price: string;
+    description?: string;
+    para?: string;
+  }[];
+};
+
+export const DessertsData: TDesserts[] = [
   {
     title: "DESSERTS",
     data: [
       {
         name: "TRES LECHES CAKE",
+        // image: require(" "),
         price: "$9",
         description:
           "Strawberry compote, strawberry balsamicquinoa, oyster mushrooms, brussels sprout leaves",
@@ -20,7 +32,6 @@ export const DessertsData = [
         image: require("../assets/icecream.jpg"),
         price: "$9",
         description: "Blood orange sherbet",
-        // para: "Dietary Information",
       },
       {
         name: "CARROT CAKE",
