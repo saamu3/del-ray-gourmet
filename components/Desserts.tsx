@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, SectionList, Image } from "react-native";
 import { DessertsData } from "../StaticData.js/DessertsData";
-export default function Desserts() {
+export default function Desserts():React.JSX.Element {
   return (
     <View style={{ marginTop: 40 }}>
       <SectionList
         sections={DessertsData}
-        keyExtractor={(item: any, index: any) => item + index}
+        keyExtractor={(item:any, index:number) => item + index}
         renderItem={({ item }: any) => (
           <View style={styles.item}>
             <View style={styles.innerContainer}>

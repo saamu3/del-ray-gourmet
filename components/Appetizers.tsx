@@ -2,13 +2,13 @@ import { View, Text, Image } from "react-native";
 import { DATA } from "../StaticData.js/AppetizersData";
 import { SectionList, StyleSheet } from "react-native";
 
-export default function Appetizers() {
+export default function Appetizers(): React.JSX.Element {
   return (
     <View style={{ marginTop: 40 }}>
       <SectionList
         sections={DATA}
-        keyExtractor={(item: any, index: any) => item + index}
-        renderItem={({ item }: any) => (
+        keyExtractor={(item:any,index:number) => item + index}
+        renderItem={({item}:any) => (
           <View style={styles.item}>
             {item.image && (
               <Image testID="image1" source={item.image} style={styles.image} />

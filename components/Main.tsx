@@ -16,7 +16,7 @@ const img1 = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
 };
 
-export default function Main() {
+export default function Main():React.JSX.Element {
   return (
     <View>
       <StatusBar hidden />
