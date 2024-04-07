@@ -16,7 +16,7 @@ const img1 = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
 };
 
-export default function Main():React.JSX.Element {
+export default function Main(): React.JSX.Element {
   return (
     <View>
       <StatusBar hidden />
@@ -67,18 +67,18 @@ const styles = StyleSheet.create({
   imageBackground: {
     width: 400,
     height: 200,
-    opacity: 0.9,
+    opacity: 0.99,
   },
   align: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  image: { height: 60, width: 120, marginTop: 90, marginLeft: 30 },
-  heading: { color: "white", fontSize: 25, fontWeight: "bold" },
-  timings: { color: "white", fontSize: 17, fontWeight: "bold" },
-  place: { color: "white", fontSize: 12, fontWeight: "bold" },
-  telephoneNumber: { color: "white", fontSize: 15, fontWeight: "bold" },
+  image: { height: 50, width: 80, marginTop: 90, marginLeft: 20 },
+  heading: { color: "rgb(255 255 255)", fontSize: 25, fontWeight: "bold" },
+  timings: { color: "white", fontSize: 17, fontWeight: "600" },
+  place: { color: "white", fontSize: 12, fontWeight: "400" },
+  telephoneNumber: { color: "white", fontSize: 15, fontWeight: "400" },
   text: { color: "white" },
-  address: { marginTop: 50, marginRight: 30, flexShrink: 1 },
+  address: { marginTop: 70, marginRight: 95, flexShrink: 1 },
 });
