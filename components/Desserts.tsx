@@ -16,12 +16,12 @@ export default function Desserts() {
                       testID="image4"
                       source={item.image}
                       style={styles.image}
-                    />
+                   />
                   )}
                 </View>
-                <View style={{ flexShrink: 1 }}>
+                <View style={{ flexShrink: 1}}>
                   <Text style={styles.itemName}>{item.name}</Text>
-                  <Text style={item.description}>{item.description}</Text>
+                  <Text style={styles.description}>{item.description}</Text>
                   <Text style={styles.para}>{item.para}</Text>
                 </View>
               </View>
@@ -54,6 +54,8 @@ const styles = StyleSheet.create({
     width: 300,
   },
   align: {
+    display: "flex",
+    flexDirection: "row",
     height: 100,
     width: 300,
   },
