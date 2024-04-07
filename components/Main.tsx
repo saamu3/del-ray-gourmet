@@ -22,58 +22,29 @@ export default function Main() {
       <StatusBar hidden />
       <View style={styles.innerContainer}>
         <Text style={styles.text}>
-          <FontAwesomeIcon
-            style={{ color: "white" }}
-            icon={faCircleExclamation}
-          />
+          <FontAwesomeIcon style={styles.text} icon={faCircleExclamation} />
           WE ARE NOW OPEN FOR INDOOR DINING!
         </Text>
       </View>
-      <View style={{ justifyContent: "center", alignItems: "center" }}>
+      <View style={styles.imageContainer}>
         <ImageBackground
           testID="background"
           source={require("../assets/background.webp")}
-          style={{
-            width: 400,
-            height: 200,
-            opacity: 0.9,
-          }}
+          style={styles.imageBackground}
         >
-          <View
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-            }}
-          >
-            <Image
-              source={img1}
-              style={{ height: 60, width: 120, marginTop: 90, marginLeft: 30 }}
-            />
+          <View style={styles.align}>
+            <Image source={img1} style={styles.image} />
             <View style={styles.address}>
-              <Text
-                style={{ color: "white", fontSize: 25, fontWeight: "bold" }}
-              >
-                Del Ray Gourmet
-              </Text>
-              <Text
-                style={{ color: "white", fontSize: 17, fontWeight: "bold" }}
-              >
+              <Text style={styles.heading}>Del Ray Gourmet</Text>
+              <Text style={styles.timings}>
                 Open • Closes 10:00 PM
-                <FontAwesomeIcon
-                  style={{ color: "white" }}
-                  icon={faAngleDown}
-                />
+                <FontAwesomeIcon style={styles.text} icon={faAngleDown} />
               </Text>
-              <Text
-                style={{ color: "white", fontSize: 12, fontWeight: "bold" }}
-              >
+              <Text style={styles.place}>
                 123 Ave of the Roosters, Derwood MD
               </Text>
-              <Text
-                style={{ color: "white", fontSize: 15, fontWeight: "bold" }}
-              >
-                <FontAwesomeIcon style={{ color: "white" }} icon={faPhone} />
+              <Text style={styles.telephoneNumber}>
+                <FontAwesomeIcon style={styles.text} icon={faPhone} />
                 Tel: 301-555-1212
               </Text>
             </View>
@@ -85,7 +56,6 @@ export default function Main() {
 }
 
 const styles = StyleSheet.create({
-  // container: {backgroundColor: "skyblue" },
   innerContainer: {
     height: 50,
     width: 360,
@@ -93,28 +63,22 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
     paddingTop: 14,
   },
-  text: { color: "white" },
-  address: { marginTop: 50, marginRight: 30, flexShrink: 1 },
-  item: {
+  imageContainer: { justifyContent: "center", alignItems: "center" },
+  imageBackground: {
+    width: 400,
+    height: 200,
+    opacity: 0.9,
+  },
+  align: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    height: 100,
-    width: 340,
-    backgroundColor: "#f9c2ff",
-    padding: 20,
-    marginVertical: 8,
   },
-  title: {
-    fontSize: 10,
-    color: "blue",
-  },
-  header: {
-    textAlign: "center",
-    fontStyle: "italic",
-    fontSize: 20,
-    backgroundColor: "#fff",
-    color: "	#AA336A",
-    fontWeight: "bold",
-  },
+  image: { height: 60, width: 120, marginTop: 90, marginLeft: 30 },
+  heading: { color: "white", fontSize: 25, fontWeight: "bold" },
+  timings: { color: "white", fontSize: 17, fontWeight: "bold" },
+  place: { color: "white", fontSize: 12, fontWeight: "bold" },
+  telephoneNumber: { color: "white", fontSize: 15, fontWeight: "bold" },
+  text: { color: "white" },
+  address: { marginTop: 50, marginRight: 30, flexShrink: 1 },
 });

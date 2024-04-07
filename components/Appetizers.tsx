@@ -11,40 +11,15 @@ export default function Appetizers() {
         renderItem={({ item }: any) => (
           <View style={styles.item}>
             {item.image && (
-              <Image
-                testID="image1"
-                source={item.image}
-                style={{ height: 10, width: 20, marginTop: 10 }}
-              />
+              <Image testID="image1" source={item.image} style={styles.image} />
             )}
             <View style={{ flexShrink: 1 }}>
-              <Text
-                style={{
-                  fontSize: 18,
-                  color: "rgb(133 77 14)",
-                  fontFamily: "serif",
-                }}
-              >
-                {item.name}
-              </Text>
-              <Text
-                style={{
-                  fontSize: 12,
-                  color: "firebrick",
-                  fontStyle: "italic",
-                  fontFamily: "serif",
-                }}
-              >
-                {item.description}
-              </Text>
-              <Text style={{ fontSize: 10, color: "rgb(107 114 128)" }}>
-                {item.para}
-              </Text>
+              <Text style={styles.itemName}>{item.name}</Text>
+              <Text style={styles.description}>{item.description}</Text>
+              <Text style={styles.para}>{item.para}</Text>
             </View>
             <View>
-              <Text style={{ fontSize: 15, color: "rgb(133 77 14)" }}>
-                {item.price}
-              </Text>
+              <Text style={styles.price}>{item.price}</Text>
             </View>
           </View>
         )}
@@ -57,15 +32,6 @@ export default function Appetizers() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
-  innerContainer: {
-    height: 30,
-    width: 360,
-    paddingLeft: 40,
-    paddingTop: 5,
-  },
-  text: { color: "white" },
-  address: { position: "absolute", color: "white" },
   item: {
     display: "flex",
     flexDirection: "row",
@@ -75,10 +41,20 @@ const styles = StyleSheet.create({
     padding: 20,
     marginVertical: 8,
   },
-  title: {
-    fontSize: 10,
-    color: "blue",
+  image: { height: 10, width: 20, marginTop: 10 },
+  itemName: {
+    fontSize: 18,
+    color: "rgb(133 77 14)",
+    fontFamily: "serif",
   },
+  description: {
+    fontSize: 12,
+    color: "firebrick",
+    fontStyle: "italic",
+    fontFamily: "serif",
+  },
+  para: { fontSize: 10, color: "rgb(107 114 128)" },
+  price: { fontSize: 15, color: "rgb(133 77 14)" },
   header: {
     textAlign: "center",
     fontFamily: "serif",
