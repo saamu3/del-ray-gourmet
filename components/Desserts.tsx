@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 12,
-    color: "firebrick",
+    color: "black",
     fontStyle: "italic",
     fontFamily: "serif",
     flexShrink: 1,
