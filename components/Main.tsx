@@ -38,7 +38,7 @@ export default function Main(): React.JSX.Element {
             <View style={styles.address}>
               <Text style={styles.heading}>Del Ray Gourmet</Text>
               <Text style={styles.timings}>
-                <Text style={styles.open}>Open • </Text>Closes 10:00 PM
+                <Text style={styles.open}>Open • </Text>Closes 9:00 PM
                 <FontAwesomeIcon style={styles.text} icon={faAngleDown} />
               </Text>
               <Text style={styles.place}>
@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
   },
   image: { height: 50, width: 80, marginTop: 90, marginLeft: 20 },
   heading: { color: "rgb(255 255 255)", fontSize: 25, fontWeight: "bold" },
-  timings: { color: "white", fontSize: 17, fontWeight: "600" },
-  open: { color: "white", fontSize: 20, fontWeight: "bold" },
+  timings: { color: "white", fontSize: 15, fontWeight: "500" },
+  open: { color: "white", fontSize: 19, fontWeight: "bold" },
   place: { color: "white", fontSize: 12, fontWeight: "400" },
   telephoneNumber: { color: "white", fontSize: 15, fontWeight: "400" },
   text: { color: "white" },
