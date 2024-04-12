@@ -1,15 +1,5 @@
-type TDesserts = {
-  title: string;
-  data: {
-    name: string;
-    image?: string;
-    price: string;
-    description?: string;
-    para?: string;
-  }[];
-};
-
-export const DessertsData: TDesserts[] = [
+import { TMenuItems } from "../_Types_/StaticDataType";
+export const DessertsData: TMenuItems[] = [
   {
     title: "DESSERTS",
     data: [

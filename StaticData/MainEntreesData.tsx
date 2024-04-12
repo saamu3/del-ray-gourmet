@@ -1,15 +1,6 @@
-type TEntrees = {
-  title: string;
-  data: {
-    name: string;
-    image?: string;
-    price: string;
-    description?: string;
-    para?: string;
-  }[];
-};
+import { TMenuItems } from "../_Types_/StaticDataType";
 
-export const Entrees: TEntrees[] = [
+export const Entrees: TMenuItems[] = [
   {
     title: "MAIN ENTRÉES",
     data: [

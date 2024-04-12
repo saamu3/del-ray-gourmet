@@ -1,15 +1,5 @@
-export type TAppetizers = {
-  title: string;
-  data: {
-    name: string;
-    image?: string;
-    price: string;
-    description?: string;
-    para?: string;
-  }[];
-};
-
-export const DATA: TAppetizers[] = [
+import { TMenuItems } from "../_Types_/StaticDataType";
+export const DATA: TMenuItems[] = [
   {
     title: "APPETIZERS",
     data: [
