@@ -32,7 +32,7 @@ export default function Main(): React.JSX.Element {
           source={require("../assets/background.webp")}
           style={styles.imageBackground}
         >
-          <View style={styles.align}>
+          <View style={styles.container}>
             <Image source={Del_Ray_gourmet_logo} style={styles.image} />
             <View style={styles.address}>
               <Text style={styles.heading}>Del Ray Gourmet</Text>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     height: 200,
     opacity: 0.99,
   },
-  align: {
+  container: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
