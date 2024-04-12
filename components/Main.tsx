@@ -12,7 +12,7 @@ import {
   View,
   ImageBackground,
 } from "react-native";
-const img1 = {
+const Del_Ray_gourmet_logo = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
 };
 
@@ -33,7 +33,7 @@ export default function Main(): React.JSX.Element {
           style={styles.imageBackground}
         >
           <View style={styles.align}>
-            <Image source={img1} style={styles.image} />
+            <Image source={Del_Ray_gourmet_logo} style={styles.image} />
             <View style={styles.address}>
               <Text style={styles.heading}>Del Ray Gourmet</Text>
               <Text style={styles.timings}>
