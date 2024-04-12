@@ -19,7 +19,7 @@ export const DessertsData: TMenuItems[] = [
       },
       {
         name: "HOUSE MADE ICE CREAM",
-        image: require("../assets/icecream.jpg"),
+        image: require("../assets/Icecream.jpg"),
         price: "$9",
         description: "Blood orange sherbet",
       },

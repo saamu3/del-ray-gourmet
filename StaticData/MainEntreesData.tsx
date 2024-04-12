@@ -6,7 +6,7 @@ export const Entrees: TMenuItems[] = [
     data: [
       {
         name: "GRILLED FAROE ISLAND SALMON",
-        image: require("../assets/salmon1.jpg"),
+        image: require("../assets/Salmon.jpg"),
         price: "$26",
         description: "quinoa, oyster mushrooms, brussels sprout leaves",
       },
