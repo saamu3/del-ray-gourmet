@@ -11,7 +11,7 @@ export default function Appetizers(): React.JSX.Element {
         renderItem={({ item }: any) => (
           <View style={styles.item}>
             {item.image && (
-              <Image testID="image1" source={item.image} style={styles.image} />
+              <Image testID="Appetizers" source={item.image} style={styles.image} />
             )}
             <View style={{ flexShrink: 1 }}>
               <Text style={styles.itemName}>{item.name}</Text>

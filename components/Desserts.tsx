@@ -13,7 +13,7 @@ export default function Desserts(): React.JSX.Element {
                 <View>
                   {item.image && (
                     <Image
-                      testID="image4"
+                      testID="Desserts"
                       source={item.image}
                       style={styles.image}
                     />

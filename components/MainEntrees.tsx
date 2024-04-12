@@ -13,7 +13,7 @@ export default function MainEntrees(): React.JSX.Element {
                 <View>
                   {item.image && (
                     <Image
-                      testID="image3"
+                      testID="Entrees"
                       source={item.image}
                       style={styles.image}
                     />
