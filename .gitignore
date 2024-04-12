@@ -7,7 +7,7 @@ node_modules/
 .expo/
 dist/
 web-build/
-coverage/
+
 
 # Native
 *.orig.*
@@ -16,6 +16,7 @@ coverage/
 *.p12
 *.key
 *.mobileprovision
+coverage/
 
 # Metro
 .metro-health-check*
