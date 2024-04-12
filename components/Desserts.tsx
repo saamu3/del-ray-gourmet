@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, SectionList, Image } from "react-native";
-import { DessertsData } from "../StaticData.js/DessertsData";
-export default function Desserts():React.JSX.Element {
+import { DessertsData } from "../StaticData/DessertsData";
+export default function Desserts(): React.JSX.Element {
   return (
     <View style={{ marginTop: 40 }}>
       <SectionList
         sections={DessertsData}
-        keyExtractor={(item:any, index:number) => item + index}
+        keyExtractor={(item: any, index: number) => item + index}
         renderItem={({ item }: any) => (
           <View style={styles.item}>
             <View style={styles.innerContainer}>
@@ -16,10 +16,10 @@ export default function Desserts():React.JSX.Element {
                       testID="image4"
                       source={item.image}
                       style={styles.image}
-                   />
+                    />
                   )}
                 </View>
-                <View style={{ flexShrink: 1}}>
+                <View style={{ flexShrink: 1 }}>
                   <Text style={styles.itemName}>{item.name}</Text>
                   <Text style={styles.description}>{item.description}</Text>
                   <Text style={styles.para}>{item.para}</Text>

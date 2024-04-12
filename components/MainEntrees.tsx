@@ -1,11 +1,11 @@
 import { View, Text, SectionList, StyleSheet, Image } from "react-native";
-import { Entrees } from "../StaticData.js/MainEntreesData";
-export default function MainEntrees():React.JSX.Element {
+import { Entrees } from "../StaticData/MainEntreesData";
+export default function MainEntrees(): React.JSX.Element {
   return (
     <View style={{ marginTop: 40 }}>
       <SectionList
         sections={Entrees}
-        keyExtractor={(item:any, index:number) => item + index}
+        keyExtractor={(item: any, index: number) => item + index}
         renderItem={({ item }: any) => (
           <View style={styles.item}>
             <View style={{ width: 300 }}>
