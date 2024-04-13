@@ -11,7 +11,7 @@ export const DATA: TMenuItems[] = [
       },
       {
         name: "DEVILS ON HORSEBACK",
-        image: require("../assets/New.jpg"),
+        sticker: require("../assets/New.jpg"),
         price: "$12",
         description:
           "bacon wrapped dates stuffed with feta, balsamic reduction",
