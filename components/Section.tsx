@@ -6,8 +6,7 @@ import {
   View,
   useWindowDimensions,
 } from "react-native";
-
-export default function Section({ Data }: any) {
+export default function Section({ Data }: any): React.JSX.Element {
   const windowWidth = useWindowDimensions().width;
   const windowHeight = useWindowDimensions().height;
   return (
