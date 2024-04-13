@@ -39,7 +39,7 @@ export default function Section({ Data }: any): React.JSX.Element {
                 <Text style={styles.description}>{item.description}</Text>
               )}
               {item.additional_information && (
-                <Text style={styles.information}>
+                <Text style={styles.additional_information}>
                   {item.additional_information}
                 </Text>
               )}
@@ -73,7 +73,6 @@ const styles = StyleSheet.create({
     flexShrink: 1,
   },
   align: { display: "flex", flexDirection: "row", flexShrink: 1 },
-
   sticker: { height: 10, width: 20, marginTop: 10 },
   itemName: {
     fontSize: 18,
@@ -86,7 +85,7 @@ const styles = StyleSheet.create({
     fontStyle: "italic",
     fontFamily: "serif",
   },
-  information: {
+  additional_information: {
     textDecorationLine: "underline",
     textDecorationStyle: "solid",
     textDecorationColor: "#000",
