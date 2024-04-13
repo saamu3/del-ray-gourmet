@@ -38,6 +38,9 @@ export default function Section({ Data }: any): React.JSX.Element {
               {item.description && (
                 <Text style={styles.description}>{item.description}</Text>
               )}
+              {item.information && (
+                <Text style={styles.information}>{item.information}</Text>
+              )}
               <Text style={styles.para}>{item.para}</Text>
             </View>
             <View>
@@ -78,6 +81,13 @@ const styles = StyleSheet.create({
     color: "black",
     fontStyle: "italic",
     fontFamily: "serif",
+  },
+  information: {
+    textDecorationLine: "underline",
+    textDecorationStyle: "solid",
+    textDecorationColor: "#000",
+    fontSize: 10,
+    color: "rgb(107 114 128)",
   },
   para: { fontSize: 10, color: "rgb(107 114 128)" },
   price: { fontSize: 15, color: "rgb(133 77 14)" },
