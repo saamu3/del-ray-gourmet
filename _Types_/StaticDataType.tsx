@@ -6,6 +6,7 @@ export type TMenuItems = {
       image?: string;
       price: string;
       description?: string;
+      information?:string;
       para?: string;
     }[];
   };
