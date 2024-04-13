@@ -31,7 +31,8 @@ export const Entrees: TMenuItems[] = [
         name: "TENDERLOIN OF BEEF WELLINGTON",
         price: "$48",
         description: "foie gras, spinach, duxelles",
-        para: "~ Add Bearnaise, Red Wine, or Bordelaise sauce for $2 extra",
+        additional_items:
+          "~ Add Bearnaise, Red Wine, or Bordelaise sauce for $2 extra",
       },
       {
         name: "HERB ROASTED PORK",
@@ -42,7 +43,8 @@ export const Entrees: TMenuItems[] = [
       {
         name: "CLASSIC NEW YORK SIRLOIN",
         price: "$26",
-        para: "~ Add Jumbo Gulf Shrimp with garlic, white wine, lemon for $9",
+        additional_items:
+          "~ Add Jumbo Gulf Shrimp with garlic, white wine, lemon for $9",
       },
       {
         name: "IDAHO RED TROUT",

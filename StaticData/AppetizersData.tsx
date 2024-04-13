@@ -7,7 +7,7 @@ export const DATA: TMenuItems[] = [
         name: "DAY BOAT SCALLOPS",
         price: "$14",
         description: "fennel, prosciutto, black bean sauce",
-        information: "Dietary Information",
+        additional_information: "Dietary Information",
       },
       {
         name: "DEVILS ON HORSEBACK",
@@ -15,7 +15,7 @@ export const DATA: TMenuItems[] = [
         price: "$12",
         description:
           "bacon wrapped dates stuffed with feta, balsamic reduction",
-        para: "~ extra bacon $3",
+        additional_items: "~ extra bacon $3",
       },
     ],
   },
