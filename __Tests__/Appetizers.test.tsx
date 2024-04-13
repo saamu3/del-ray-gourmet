@@ -6,7 +6,8 @@ import "@testing-library/react-native/extend-expect";
 describe("should render Section component ", () => {
   test("should check the image is present or not", () => {
     render(<Appetizers />);
-    const image = screen.getByTestId("Appetizers");
+    const image = screen.getByTestId("sticker")
+    screen.debug()
     expect(image).toBeOnTheScreen();
   });
 });

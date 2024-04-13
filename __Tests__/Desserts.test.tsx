@@ -6,7 +6,7 @@ import '@testing-library/react-native/extend-expect';
 describe("should render the MainEntrees component",()=>{
     test("should check the image is present otr not",()=>{
         render(<Desserts/>)
-        const view = screen.getByTestId("Desserts")
+        const view = screen.getByTestId("Appetizers")
         screen.debug()
         expect(view).toBeOnTheScreen();
     })
