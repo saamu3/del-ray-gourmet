@@ -35,7 +35,7 @@ export default function Section({
               />
             )}
             {item.sticker && (
-              <Image style={styles.sticker} source={item.sticker} />
+              <Image style={styles.sticker} source={item.sticker} testID="sticker" />
             )}
 
             <View style={{ flexShrink: 1 }}>
