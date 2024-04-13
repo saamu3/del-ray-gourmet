@@ -6,7 +6,8 @@ import {
   View,
   useWindowDimensions,
 } from "react-native";
-export default function Section({ Data }: any): React.JSX.Element {
+import { TMenuItems } from "../_Types_/StaticDataType";
+export default function Section({ Data }:{Data:TMenuItems[]}): React.JSX.Element {
   const windowWidth = useWindowDimensions().width;
   const windowHeight = useWindowDimensions().height;
   return (
