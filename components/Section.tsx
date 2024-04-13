@@ -38,10 +38,14 @@ export default function Section({ Data }: any): React.JSX.Element {
               {item.description && (
                 <Text style={styles.description}>{item.description}</Text>
               )}
-              {item.information && (
-                <Text style={styles.information}>{item.information}</Text>
+              {item.additional_information && (
+                <Text style={styles.information}>
+                  {item.additional_information}
+                </Text>
               )}
-              <Text style={styles.para}>{item.para}</Text>
+              <Text style={styles.additional_items}>
+                {item.additional_items}
+              </Text>
             </View>
             <View>
               <Text style={styles.price}>{item.price}</Text>
@@ -89,7 +93,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: "rgb(107 114 128)",
   },
-  para: { fontSize: 10, color: "rgb(107 114 128)" },
+  additional_items: { fontSize: 10, color: "rgb(107 114 128)" },
   price: { fontSize: 15, color: "rgb(133 77 14)" },
   header: {
     textAlign: "center",
