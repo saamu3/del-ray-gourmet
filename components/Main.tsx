@@ -32,6 +32,7 @@ export default function Main(): React.JSX.Element {
           testID="background"
           source={require("../assets/Background.jpg")}
           style={styles.imageBackground}
+          resizeMode="cover"
         >
           <View style={styles.container}>
             <Image source={Del_Ray_gourmet_logo} style={styles.image} />
@@ -59,14 +60,16 @@ export default function Main(): React.JSX.Element {
 const styles = StyleSheet.create({
   innerContainer: {
     height: 50,
-    width: 360,
+    // width: 360,
     backgroundColor: "rgb(248 113 113)",
-    paddingLeft: 40,
-    paddingTop: 14,
+    justifyContent:"center",
+    alignItems:"center",
+    // paddingLeft: 40,
+    // paddingTop: 1,
   },
   imageContainer: { justifyContent: "center", alignItems: "center" },
   imageBackground: {
-    width: 400,
+    width: "100%",
     height: 200,
     opacity: 0.99,
   },
@@ -76,9 +79,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   image: { height: 50, width: 80, marginTop: 90, marginLeft: 20 },
-  heading: { color: "rgb(255 255 255)", fontSize: 25, fontWeight: "bold" },
-  timings: { color: "white", fontSize: 15, fontWeight: "500" },
-  open: { color: "white", fontSize: 19, fontWeight: "bold" },
+  heading: { color: "rgb(255 255 255)", fontSize: 20, fontWeight: "bold" },
+  timings: { color: "white", fontSize: 13, fontWeight: "500" },
+  open: { color: "white", fontSize: 18, fontWeight: "bold" },
   place: { color: "white", fontSize: 12, fontWeight: "400" },
   telephoneNumber: { color: "white", fontSize: 15, fontWeight: "400" },
   text: { color: "white" },
