@@ -28,10 +28,12 @@ export default function Section({
                 style={[
                   styles.image,
                   {
-                    height: windowHeight > 700 ? "90%" : "40%",
-                    width: windowWidth > 500 ? "40%" : "60%",
+                    height: windowHeight > 700 ? "120%" : "50%",
+                    width: windowWidth > 500 ? "70%" : "50%",
                   },
                 ]}
+                resizeMode="cover"
+                // resizeMethod="resize"
               />
             )}
             {item.sticker && (
@@ -72,13 +74,16 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   image: {
+    // width:"100%",
+    // height:20,
     marginTop: 6,
     marginRight: 10,
     borderRadius: 5,
     flexShrink: 1,
+  //  backgroundColor:"red"
   },
   align: { display: "flex", flexDirection: "row", flexShrink: 1 },
-  sticker: { height: 10, width: 20, marginTop: 10 },
+  sticker: { height: 10, width: 20, marginTop: 10},
   itemName: {
     fontSize: 18,
     color: "rgb(133 77 14)",
