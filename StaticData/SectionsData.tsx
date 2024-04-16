@@ -76,7 +76,6 @@ export const SectionsData: TMenuItems[] = [
     data: [
       {
         name: "TRES LECHES CAKE",
-        // image: require(" "),
         price: "$9",
         description:
           "Strawberry compote, strawberry balsamicquinoa, oyster mushrooms, brussels sprout leaves",
