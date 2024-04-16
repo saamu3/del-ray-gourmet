@@ -1,12 +1,12 @@
 import {
   Image,
-  SectionList,
   StyleSheet,
   Text,
   View,
   useWindowDimensions,
 } from "react-native";
 import { TMenuItems } from "../_Types_/StaticDataType";
+import SectionList from "react-native-tabs-section-list/lib/SectionList";
 export default function Section({
   Data,
 }: {
@@ -15,11 +15,38 @@ export default function Section({
   const windowWidth = useWindowDimensions().width;
   const windowHeight = useWindowDimensions().height;
   return (
-    <View>
+    <View style={styles.container}>
       <SectionList
         sections={Data}
-        keyExtractor={(item: any, index: number) => item + index}
-        renderItem={({ item }: any) => (
+        keyExtractor={(item) => item.title}
+        stickySectionHeadersEnabled={false}
+        scrollToLocationOffset={10}
+        tabBarStyle={styles.tabBar}
+        ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
+        SectionSeparatorComponent={() => (
+          <View style={styles.sectionSeparator} />
+        )}
+        renderTab={({ title, isActive }) => (
+          <View
+            style={[
+              styles.tabContainer,
+              { borderBottomWidth: isActive ? 2 : 0 },
+            ]}
+          >
+            <Text
+              style={[
+                styles.tabText,
+                { color: isActive ? "rgb(248, 113, 113)" : "black" },
+              ]}
+            >
+              {title}
+            </Text>
+          </View>
+        )}
+        renderSectionHeader={({ section: { title } }) => (
+          <Text style={styles.header}>{title}</Text>
+        )}
+        renderItem={({ item }) => (
           <View style={styles.item}>
             {item.image && (
               <Image
@@ -28,16 +55,19 @@ export default function Section({
                 style={[
                   styles.image,
                   {
-                    height: windowHeight > 700 ? "120%" : "50%",
+                    height: windowHeight > 700 ? "100%" : "50%",
                     width: windowWidth > 500 ? "70%" : "50%",
                   },
                 ]}
                 resizeMode="cover"
-                // resizeMethod="resize"
               />
             )}
             {item.sticker && (
-              <Image style={styles.sticker} source={item.sticker} testID="sticker" />
+              <Image
+                style={styles.sticker}
+                source={item.sticker}
+                testID="sticker"
+              />
             )}
 
             <View style={{ flexShrink: 1 }}>
@@ -59,31 +89,55 @@ export default function Section({
             </View>
           </View>
         )}
-        renderSectionHeader={({ section: { title } }) => (
-          <Text style={styles.header}>{title}</Text>
-        )}
       />
     </View>
   );
 }
+
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f6f6f6",
+  },
+  tabBar: {
+    backgroundColor: "#fff",
+    borderBottomColor: "#f4f4f4",
+    borderBottomWidth: 1,
+  },
+  tabContainer: {
+    borderBottomColor: "rgb(248, 113, 113)",
+  },
+  tabText: {
+    padding: 15,
+    fontSize: 15,
+    fontWeight: "500",
+  },
+  itemSeparator: {
+    height: 0.5,
+    width: "96%",
+  },
+  sectionSeparator: {
+    marginBottom: 5,
+    height: 0.5,
+    width: "96%",
+    alignSelf: "flex-start",
+    backgroundColor: "",
+    marginVertical: 10,
+  },
   item: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 20,
+    padding: 10,
   },
   image: {
-    // width:"100%",
-    // height:20,
-    marginTop: 6,
+    marginTop: 5,
     marginRight: 10,
     borderRadius: 5,
     flexShrink: 1,
-  //  backgroundColor:"red"
   },
   align: { display: "flex", flexDirection: "row", flexShrink: 1 },
-  sticker: { height: 10, width: 20, marginTop: 10},
+  sticker: { height: 10, width: 20, marginTop: 10 },
   itemName: {
     fontSize: 18,
     color: "rgb(133 77 14)",
@@ -105,6 +159,7 @@ const styles = StyleSheet.create({
   additional_items: { fontSize: 10, color: "rgb(107 114 128)" },
   price: { fontSize: 15, color: "rgb(133 77 14)" },
   header: {
+    marginTop: 20,
     textAlign: "center",
     fontFamily: "serif",
     fontSize: 20,
