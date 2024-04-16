@@ -31,7 +31,10 @@ export default function Sections({
             <Text
               style={[
                 style.tabText,
-                { color: isActive ? "rgb(248, 113, 113)" : "black" },
+                {
+                  color: isActive ? "rgb(248, 113, 113)" : "black",
+                  backgroundColor: isActive ? "rgb(255,235,224)" : "white",
+                },
               ]}
             >
               {title}
