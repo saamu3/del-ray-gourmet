@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react-native";
-import Section from "../components/Section";
+import Sections from "../components/Sections";
 import { SectionList } from "react-native";
 const mockData = [
   {
@@ -30,7 +30,7 @@ const mockData = [
 ];
 describe("Testing SectionList", () => {
   test("should render the all items", () => {
-    const component = render(<Section Data={mockData} />);
+    const component = render(<Sections Data={mockData} />);
     screen.debug();
     const sectionlist = component.UNSAFE_getAllByType(SectionList);
     expect(sectionlist.length).toBe(1);
