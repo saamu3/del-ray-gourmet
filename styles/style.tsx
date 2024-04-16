@@ -43,8 +43,9 @@ export default StyleSheet.create({
   },
   tabText: {
     padding: 15,
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: "500",
+    textTransform:"capitalize"
   },
   itemSeparator: {
     height: 0.5,
