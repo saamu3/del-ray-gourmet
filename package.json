@@ -36,6 +36,7 @@
     "react-native-screens": "~3.29.0",
     "react-native-svg": "^15.1.0",
     "react-native-tab-view": "^3.5.2",
+    "react-native-tabs-section-list": "^1.0.1",
     "react-test-renderer": "^18.2.0"
   },
   "devDependencies": {
