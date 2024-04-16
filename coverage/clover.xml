@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1713011811003" clover="3.2.0">
-  <project timestamp="1713011811003" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="7" methods="5" coveredmethods="5" elements="27" coveredelements="22" complexity="0" loc="10" ncloc="10" packages="3" files="4" classes="4"/>
-    <package name="StaticData">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="AppetizersData.tsx" path="C:\Users\Soumya Sri\My_projects\React_Native\Food-Menu\StaticData\AppetizersData.tsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1713247981939" clover="3.2.0">
+  <project timestamp="1713247981939" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="16" coveredconditionals="12" methods="7" coveredmethods="7" elements="35" coveredelements="31" complexity="0" loc="12" ncloc="12" packages="2" files="3" classes="3"/>
     <package name="assets">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Cassoulet.jpg" path="C:\Users\Soumya Sri\My_projects\React_Native\Food-Menu\assets\Cassoulet.jpg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
       <file name="New.jpg" path="C:\Users\Soumya Sri\My_projects\React_Native\Food-Menu\assets\New.jpg">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components">
-      <metrics statements="8" coveredstatements="8" conditionals="12" coveredconditionals="7" methods="5" coveredmethods="5"/>
-      <file name="Appetizers.tsx" path="C:\Users\Soumya Sri\My_projects\React_Native\Food-Menu\components\Appetizers.tsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
-      </file>
-      <file name="Section.tsx" path="C:\Users\Soumya Sri\My_projects\React_Native\Food-Menu\components\Section.tsx">
-        <metrics statements="7" coveredstatements="7" conditionals="12" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <metrics statements="10" coveredstatements="10" conditionals="16" coveredconditionals="12" methods="7" coveredmethods="7"/>
+      <file name="Sections.tsx" path="C:\Users\Soumya Sri\My_projects\React_Native\Food-Menu\components\Sections.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="16" coveredconditionals="12" methods="7" coveredmethods="7"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="67" count="1" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
       </file>
     </package>
   </project>
