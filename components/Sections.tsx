@@ -19,7 +19,7 @@ export default function Sections({
     <View style={style.sectionContainer}>
       <SectionList
         sections={Data}
-        keyExtractor={(item) => item.title}
+        keyExtractor={(item) => item.name}
         stickySectionHeadersEnabled={false}
         scrollToLocationOffset={10}
         tabBarStyle={style.tabBar}
