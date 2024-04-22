@@ -1,7 +1,7 @@
 import { Image, Text, View, useWindowDimensions } from "react-native";
 import SectionList from "react-native-tabs-section-list/lib/SectionList";
 import { TMenuItems } from "../_Types_/StaticDataType";
-import style from "../styles/style";
+import style from "../styles/SectionsStyle";
 export default function Sections({
   Data,
 }: {

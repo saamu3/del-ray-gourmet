@@ -5,7 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { Image, ImageBackground, StatusBar, Text, View } from "react-native";
-import style from "../styles/style";
+import style from "../styles/MainStyle";
 const Del_Ray_gourmet_logo = {
   uri: "https://qr.imenupro.com/cdn-cgi/image/width=320,format=auto,fit=scale-down/https://s3.imenupro.com/imp_oznkrLNkQdF9J3/4m-h9-qr2-logo.webp?v=231233669",
 };
