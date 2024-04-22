@@ -84,14 +84,14 @@ export default StyleSheet.create({
     fontStyle: "italic",
     fontFamily: "serif",
   },
-  additional_information: {
+  additionalInformation: {
     textDecorationLine: "underline",
     textDecorationStyle: "solid",
     textDecorationColor: "#000",
     fontSize: 10,
     color: "rgb(107 114 128)",
   },
-  additional_items: { fontSize: 10, color: "rgb(107 114 128)" },
+  additionalItems: { fontSize: 10, color: "rgb(107 114 128)" },
   price: { fontSize: 15, color: "rgb(133 77 14)" },
   header: {
     marginTop: 20,

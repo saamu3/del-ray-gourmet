@@ -74,11 +74,11 @@ export default function Sections({
                 <Text style={style.description}>{item.description}</Text>
               )}
               {item.additional_information && (
-                <Text style={style.additional_information}>
+                <Text style={style.additionalInformation}>
                   {item.additional_information}
                 </Text>
               )}
-              <Text style={style.additional_items}>
+              <Text style={style.additionalItems}>
                 {item.additional_items}
               </Text>
             </View>
