@@ -11,12 +11,13 @@
 
 * ## When I click on the APPETIZERS it should display all menu items related to APPETIZERS. Similarly, MENU ENTREES and DESSERTS.
 
-* ## Here, I have created _Four_ components <span style="color:MediumVioletRed">_**Main**_,_**Appetizers**_,_**Desserts**_ and _**Main Entrees**_</span> in the components folder.
-* ## I have created <span style="color:Teal">**top navigation bar**</span> by using top navigator package. which having tab names as appetizers, main entrees and desserts.
-* ## After that, I have added <span style="color:SteelBlue">**Navigation Container**</span> to the navigation bar to perform navigation between different tabs.
+* ## Here, I have created _Two_ components <span style="color:MediumVioletRed">_**Main**_ and _**Sections**_</span> in the components folder.
+* ## I have created <span style="color:Teal">**top navigation bar**</span> by using react-native-tabs-section-list package. which having tab names as appetizers, main entrees and desserts.
 * ##  I have used <span style="color:LightSkyBlue">**Section List**</span> to render menu items section wise.
 * ##  <span style="color:LightCoral">_**In the main component**_</span>, I have created an background image an kept address of the restaurent on background image.
 * ## Here I have used <span style="color:plum">_**staticData**_</span> folder to store all static data related to appetizers,main entrees and desserts.
+* ## I have created two seperate style file for sections and main components. I have imported the files into the components to add required styles.
+* ## And I have added auto scrollable to the section list, like when I click the specific filter it will automtically scroll upto the particular section. it will only show the specific section.similarly, other two filters do.
 * ##  I wrote <span style="color:DeepSkyBlue">_**unit testing**_</span> to the  components. And I kept all tests in a Tests folder.
 * ##  I have installed <span style="color:OrangeRed">_**typescript**_</span> into app to create components with tsx extension.
 * ##  I kept all images in assets folder,which I have used in this application.
@@ -33,9 +34,6 @@
 
 # <span style="color:LightSeaGreen">**Installed Packages:**</span>
 * ## In this application I have used navigation,for this I have installed two packages into the app.
-    * ## <span style="color:HotPink">**For Top Navigation bar:** `npm install @react-navigation/material-top-tabs react-native-tab-view `
+    * ## <span style="color:HotPink">**For Top Navigation bar:** `npm i react-native-tabs-section-list` for creating navigation bar along with the auto scrollable functionality.
 
-    * ## <span style="color:HotPink">**For Expo managed project:**`npx expo install react-native-pager-view`
 
-    * ## <span style="color:HotPink">**For Navigation:** 
-        ## `npm install @react-navigation/native @react-navigation/native-stack`.
